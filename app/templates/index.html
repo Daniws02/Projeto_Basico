@@ -7,6 +7,14 @@
 <body>
     <h1>Index</h1>
 
-    <a href ="{% url 'outro' %}">Outro</a>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <input type="submit">
+        
+    </form>
+    <a href = "{% url 'outro' %}">Outro</a>
+
 </body>
 </html>
